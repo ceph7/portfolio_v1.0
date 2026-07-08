@@ -1,24 +1,84 @@
-function Contact(){
+import { useState } from 'react';
+import { submitContact } from '../services/api';
 
-    return (
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-        <section className="contact-page">
-            <h2>Contactez-moi</h2>
-            <p>Vous pouvez me contacter via le formulaire ci-dessous :</p>
+  const [status, setStatus] = useState('');
 
-            <form className="contact-form">
-                <label htmlFor="name">Nom :</label>
-                <input type="text" id="name" name="name" placeholder="Votre nom" required />
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
-                <label htmlFor="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Envoi en cours...');
 
-                <label htmlFor="message">Message :</label>
-                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+    try {
+      const result = await submitContact(formData);
+      setStatus(result.message || 'Message envoyé avec succès');
+    } catch (error) {
+      setStatus('Une erreur est survenue');
+    }
+  };
 
-                <button type="submit" className="btn btn-primary">Envoyer</button>
-            </form>
-        </section>
-    );
+  return (
+    <section className="contact-page">
+      <h2>Contactez-moi</h2>
+
+      <p>
+        Vous avez un projet, une question ou une idée ? N’hésitez pas à me contacter.
+      </p>
+
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label>
+          Nom
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Votre nom"
+          />
+        </label>
+
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Votre email"
+          />
+        </label>
+
+        <label>
+          Message
+          <textarea
+            name="message"
+            rows="5"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Votre message"
+          />
+        </label>
+
+        <button type="submit" className="btn btn-primary">
+          Envoyer
+        </button>
+
+        {status && <p>{status}</p>}
+      </form>
+    </section>
+  );
 }
+
 export default Contact;
