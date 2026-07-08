@@ -22,8 +22,6 @@ function About(){
                         de mon approche.
                     </p>
                 </div>
-
-            
             </div>
 
         </section>
