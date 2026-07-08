@@ -10,6 +10,7 @@ function Contact() {
 
   const [status, setStatus] = useState('');
   const [error, setError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -32,21 +33,21 @@ function Contact() {
 
     const validationError = valiate();
     if (validationError) {
-      setStatus('');
       setError(validationError);
       return;
     }
+
+    setIsSubmitting(true);
 
     try {
       const result = await submitContact(formData);
       setStatus(result.message || 'Message envoyé avec succès');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-    //   setStatus('Une erreur est survenue');
-      setError('Une erreur est survenue lors de l\'envoi du message.');
+    } catch (err) {
+      setError(err.message || 'Une erreur est survenue lors de l\'envoi du message.');
+    } finally {
+      setIsSubmitting(false);
     }
-
-
   };
 
   return (
@@ -91,8 +92,8 @@ function Contact() {
           />
         </label>
 
-        <button type="submit" className="btn btn-primary">
-          Envoyer
+        <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+          {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
         </button>
 
         {error && <p className="message error">{error}</p>}

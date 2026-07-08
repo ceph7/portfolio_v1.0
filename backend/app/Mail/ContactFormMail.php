@@ -20,7 +20,7 @@ class ContactFormMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Nouveau message de contact depuis votre portfolio')
+        return $this->subject('MESSAGE DE VOTRE PORTFOLIO')
             ->view('emails.contact')
             ->with([
                 'name' => $this->name,

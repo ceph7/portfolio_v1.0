@@ -208,6 +208,11 @@ footer {
   cursor: pointer;
 }
 
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
 section {
   border: 1px solid #e5e7eb;
 }
