@@ -213,6 +213,22 @@ footer {
   cursor: wait;
 }
 
+.success-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: #ecfdf3;
+  color: #15803d;
+  border: 1px solid #a7f3d0;
+  font-weight: 600;
+}
+
+.success-banner span {
+  font-size: 1rem;
+}
+
 section {
   border: 1px solid #e5e7eb;
 }

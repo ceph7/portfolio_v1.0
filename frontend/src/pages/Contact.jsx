@@ -11,6 +11,7 @@ function Contact() {
   const [status, setStatus] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -30,6 +31,7 @@ function Contact() {
     e.preventDefault();
     setStatus('');
     setError('');
+    setShowSuccess(false);
 
     const validationError = valiate();
     if (validationError) {
@@ -42,7 +44,13 @@ function Contact() {
     try {
       const result = await submitContact(formData);
       setStatus(result.message || 'Message envoyé avec succès');
+      setShowSuccess(true);
       setFormData({ name: '', email: '', message: '' });
+
+      window.setTimeout(() => {
+        setShowSuccess(false);
+        setStatus('');
+      }, 2500);
     } catch (err) {
       setError(err.message || 'Une erreur est survenue lors de l\'envoi du message.');
     } finally {
@@ -60,13 +68,13 @@ function Contact() {
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <label>
-          Nom
+          Nom et Prenoms
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Votre nom"
+            placeholder="Votre nom et prenoms"
           />
         </label>
 
@@ -98,7 +106,12 @@ function Contact() {
 
         {error && <p className="message error">{error}</p>}
 
-        {status && <p className="message success">{status}</p>}
+        {showSuccess && status && (
+          <div className="success-banner" role="status" aria-live="polite">
+            <span>✓</span>
+            <p>{status}</p>
+          </div>
+        )}
 
         {/* {status && <p>{status}</p>} */}
 
