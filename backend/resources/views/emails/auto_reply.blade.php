@@ -10,7 +10,7 @@
         <p>Je vous remercie pour votre prise de contact.</p>
         <p>J’ai bien reçu votre message et je reviendrai vers vous dès que possible.</p>
         <p>À très vite,</p>
-        <p><strong>Mon Portfolio</strong></p>
+        <p><strong>ADZIMAH Seraph Cephas</strong></p>
     </div>
 </body>
 </html>
