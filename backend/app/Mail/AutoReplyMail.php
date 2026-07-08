@@ -7,25 +7,21 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ContactFormMail extends Mailable
+class AutoReplyMail extends Mailable
 {
     use Queueable, SerializesModels;
 
     public function __construct(
         public string $name,
-        public string $email,
-        public string $message,
     ) {
     }
 
     public function build()
     {
-        return $this->subject('Nouveau message de contact depuis votre portfolio')
-            ->view('emails.contact')
+        return $this->subject('Merci pour votre message')
+            ->view('emails.auto_reply')
             ->with([
                 'name' => $this->name,
-                'email' => $this->email,
-                'body' => $this->message,
             ]);
     }
 }

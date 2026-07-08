@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AutoReplyMail;
 use App\Mail\ContactFormMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
@@ -26,6 +27,8 @@ class ContactController extends Controller
             $data['email'],
             $data['message']
         ));
+
+        Mail::to($data['email'])->send(new AutoReplyMail($data['name']));
 
         return response()->json([
             'message' => 'Message enregistré avec succès !',
