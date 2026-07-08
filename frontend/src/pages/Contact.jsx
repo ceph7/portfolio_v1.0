@@ -76,7 +76,7 @@ function Contact() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Votre email"
+            placeholder="test@example.com"
           />
         </label>
 
