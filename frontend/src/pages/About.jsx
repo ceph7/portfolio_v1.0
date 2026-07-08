@@ -15,7 +15,7 @@ function About() {
 
       <div className="about-grid">
         <article className="about-card">
-          <h3>Qui je suis</h3>
+          <h3>Qui je suis ?</h3>
           <p>
             Je m’intéresse au développement web depuis longtemps et j’aime construire
             des projets à la fois esthétiques et fonctionnels. Je travaille avec
