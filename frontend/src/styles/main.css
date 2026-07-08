@@ -530,3 +530,92 @@ section {
     height: 220px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.about-hero h1 {
+  margin: 0.4rem 0 0.8rem;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  color: #111827;
+}
+
+.about-hero p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.about-card,
+.value-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.about-card h3,
+.value-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  color: #111827;
+}
+
+.about-card p,
+.value-item p,
+.about-story p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.about-story {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.about-story h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-grid,
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+}
