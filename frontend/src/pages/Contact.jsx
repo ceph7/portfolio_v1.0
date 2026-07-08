@@ -27,7 +27,7 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Envoi en cours...');
+    setStatus('');
     setError('');
 
     const validationError = valiate();
@@ -42,7 +42,7 @@ function Contact() {
       setStatus(result.message || 'Message envoyé avec succès');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      setStatus('Une erreur est survenue');
+    //   setStatus('Une erreur est survenue');
       setError('Une erreur est survenue lors de l\'envoi du message.');
     }
 
