@@ -9,9 +9,9 @@ class ContactController extends Controller{
 public function store(Request $request){
 
     $data = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'message' => 'required|string',
+        'name' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'email', 'max:255'],
+        'message' => ['required', 'string', 'max:1000'],
     ]);
 
     return response()->json([
@@ -21,7 +21,7 @@ public function store(Request $request){
     
     ],201);
 
-}
+    }
 }
 
 

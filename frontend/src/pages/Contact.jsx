@@ -27,6 +27,9 @@ function Contact() {
     } catch (error) {
       setStatus('Une erreur est survenue');
     }
+
+    {error && <p style={{ color: 'red' }}>{error}</p>}
+
   };
 
   return (
