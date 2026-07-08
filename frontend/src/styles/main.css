@@ -231,3 +231,11 @@ section {
 .error {
   color: #dc2626;
 }
+
+.services-section {
+  margin-top: 1.5rem;
+}
+
+.services-section h2 {
+  margin-bottom: 1rem;
+}

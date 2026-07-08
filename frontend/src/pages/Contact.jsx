@@ -99,7 +99,7 @@ function Contact() {
 
         {status && <p className="message success">{status}</p>}
 
-        {status && <p>{status}</p>}
+        {/* {status && <p>{status}</p>} */}
 
       </form>
     </section>

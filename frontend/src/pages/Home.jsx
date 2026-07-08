@@ -87,8 +87,27 @@ function Home() {
                         pour connaitre les conditions meteo sur toute l'étendue du territoire Togolais. Ce script a été intégré dans un projet plus vaste de gestion des données meteo.
                     </p>
                 </div>
+            </div>
 
+            <div className= "services-section">
+                <h2>Mes services</h2>
 
+                <div className="info-grid">
+                    <div className="info-card">
+                        <h3>Développement web</h3>
+                        <p>
+                            Création de sites web modernes, performants et adaptés aux besoins des utilisateurs.
+                        </p>
+                    </div>
+
+                    <div className="info-card">
+                        <h3>Maintenance et support</h3>
+                        <p>
+                            Maintenance de sites web existants, résolution de problèmes et mise à jour des fonctionnalités.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </section>
     );
