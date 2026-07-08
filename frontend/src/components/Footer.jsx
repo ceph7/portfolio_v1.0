@@ -19,7 +19,7 @@ function Footer() {
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:contact@votreportfolio.com">contact@votreportfolio.com</a></li>
+            <li><a href="mailto:seraphcephas@gmail.com">seraphcephas@gmail.com</a></li>
             <li><span>Lomé, Togo</span></li>
           </ul>
         </div>
