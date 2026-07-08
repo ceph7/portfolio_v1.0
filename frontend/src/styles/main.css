@@ -219,3 +219,15 @@ section {
   gap: 1rem;
 }
 
+.message {
+  margin: 0;
+  font-weight: 600;
+}
+
+.success {
+  color: #15803d;
+}
+
+.error {
+  color: #dc2626;
+}

@@ -9,6 +9,7 @@ function Contact() {
   });
 
   const [status, setStatus] = useState('');
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -17,18 +18,34 @@ function Contact() {
     });
   };
 
+  const valiate = () => {
+    if (!formData.name.trim()) return 'le nom est requis';
+    if (!formData.email.trim()) return 'l\'email est requis';
+    if (!formData.message.trim()) return 'le message est requis';
+    return '';
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Envoi en cours...');
+    setError('');
+
+    const validationError = valiate();
+    if (validationError) {
+      setStatus('');
+      setError(validationError);
+      return;
+    }
 
     try {
       const result = await submitContact(formData);
       setStatus(result.message || 'Message envoyé avec succès');
+      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       setStatus('Une erreur est survenue');
+      setError('Une erreur est survenue lors de l\'envoi du message.');
     }
 
-    {error && <p style={{ color: 'red' }}>{error}</p>}
 
   };
 
@@ -78,7 +95,12 @@ function Contact() {
           Envoyer
         </button>
 
+        {error && <p className="message error">{error}</p>}
+
+        {status && <p className="message success">{status}</p>}
+
         {status && <p>{status}</p>}
+
       </form>
     </section>
   );
