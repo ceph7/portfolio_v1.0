@@ -4,7 +4,7 @@ function Footer() {
       <div className="footer-content">
         <div>
           <h3>Mon Portfolio</h3>
-          <p>Développeur web passionné par les solutions modernes et utiles.</p>
+          <p>Développeur passionné par les solutions modernes et utiles.</p>
         </div>
 
         <div>
