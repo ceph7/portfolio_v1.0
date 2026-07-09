@@ -63,7 +63,7 @@ function Contact() {
       <h2>Contactez-moi</h2>
 
       <p>
-        <strong>Vous avez un projet, une question ou une idée ? N’hésitez pas à me contacter.</strong>
+        <strong><em>Vous avez un projet, une question ou une idée ? N’hésitez pas à me contacter.</em></strong>
       </p>
 
       <form className="contact-form" onSubmit={handleSubmit}>
