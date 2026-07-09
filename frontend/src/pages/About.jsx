@@ -36,7 +36,7 @@ function About() {
       <div className="about-story">
         <h2>Mon parcours</h2>
         <p>
-          Au fil de mes expériences, j’ai appris à allier technique, créativité
+          J'ai commencé le développement web dès ma première année d'université. Au fil de mes expériences, j’ai appris à allier technique, créativité
           et logique pour produire des projets pertinents. Chaque réalisation me
           permet de renforcer mes compétences et d’apprendre de nouvelles approches.
         </p>
