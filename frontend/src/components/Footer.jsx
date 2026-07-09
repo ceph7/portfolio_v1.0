@@ -26,7 +26,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 Mon Portfolio. Tous droits réservés.</p>
+        <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
       </div>
     </footer>
   );
