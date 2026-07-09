@@ -104,7 +104,12 @@ function Contact() {
           {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
         </button>
 
-        {error && <p className="message error">{error}</p>}
+        {error && (
+          <div className="error-banner" role="alert">
+            <span>✕</span>
+            <p>{error}</p>
+          </div>
+        )}
 
         {showSuccess && status && (
           <div className="success-banner" role="status" aria-live="polite">
