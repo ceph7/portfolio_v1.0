@@ -20,7 +20,7 @@ function Contact() {
     });
   };
 
-  const valiate = () => {
+  const validate = () => {
     if (!formData.name.trim()) return 'le nom est requis';
     if (!formData.email.trim()) return 'l\'email est requis';
     if (!formData.message.trim()) return 'le message est requis';
@@ -33,7 +33,7 @@ function Contact() {
     setError('');
     setShowSuccess(false);
 
-    const validationError = valiate();
+    const validationError = validate();
     if (validationError) {
       setError(validationError);
       return;

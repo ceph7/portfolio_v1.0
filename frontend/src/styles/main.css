@@ -202,6 +202,11 @@ footer {
   font: inherit;
 }
 
+.contact-form textarea {
+  resize: vertical;
+  max-width: 100%;
+}
+
 .contact-form button {
   width: fit-content;
   border: none;
