@@ -142,8 +142,7 @@ function Home() {
            <article className="info-card">
             <h3>Développement Mobile</h3>
             <p>
-              Création de sites web modernes, rapides et adaptés aux besoins
-              de vos utilisateurs.
+              Création d'applications intuitives, rapides et pensées pour les utilisateurs.
             </p>
           </article>
 
