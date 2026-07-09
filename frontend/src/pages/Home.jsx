@@ -47,7 +47,7 @@ function Home() {
         <article className="info-card">
           <h3>Ce que je propose</h3>
           <p>
-            Développement de sites web modernes, optimisation de l’expérience
+            Développement de sites web modernes,applications web et optimisation de l’expérience
             utilisateur et mise en place de solutions sur mesure.
           </p>
         </article>
@@ -74,8 +74,9 @@ function Home() {
           </article>
 
           <article className="project-card">
-            <h3>Application web sur mesure</h3>
-            <p>Une solution pensée pour répondre à un besoin précis et concret.</p>
+            <h3>Application web de gestion de parc informatique</h3>
+            <p>Une solution pensée pour répondre à un besoin précis et concret au sein des entreprises pour ameliorer
+              le suivi du materiel affecté aux employés.</p>
           </article>
 
           <article className="project-card">
