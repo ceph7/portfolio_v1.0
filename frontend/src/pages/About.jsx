@@ -49,7 +49,7 @@ function About() {
         </div>
         <div className="value-item">
           <h3>Précision</h3>
-          <p>Des solutions soignées, propres et adaptées au besoin.</p>
+          <p>Des solutions soignées, propres et adaptées au besoin relevé par l'utilisateur.</p>
         </div>
         <div className="value-item">
           <h3>Performance</h3>
