@@ -17,10 +17,10 @@ function About() {
         <article className="about-card">
           <h3>Qui je suis ?</h3>
           <p>
-            Je m’intéresse au développement web depuis longtemps et j’aime construire
-            des projets à la fois esthétiques et fonctionnels. Je travaille avec
+            Je m’intéresse au développement web depuis quelques années et j’aime construire
+            des projets à la fois fonctionnels et esthétiques. Je travaille avec
             des technologies modernes pour offrir des expériences fluides sur tous
-            les supports.
+            les supports et garantir l'accessibilité à tous.
           </p>
         </article>
 
