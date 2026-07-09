@@ -815,3 +815,8 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+.contact-form textarea {
+  resize: vertical;
+  max-width: 100%;
+}
