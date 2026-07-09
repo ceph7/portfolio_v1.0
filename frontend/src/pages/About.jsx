@@ -43,6 +43,10 @@ function About() {
       </div>
 
       <div className="about-values">
+         <div className="value-item">
+          <h3>Écoute</h3>
+          <p>Une approche centrée sur les besoins de l’utilisateur.</p>
+        </div>
         <div className="value-item">
           <h3>Précision</h3>
           <p>Des solutions soignées, propres et adaptées au besoin.</p>
@@ -50,10 +54,6 @@ function About() {
         <div className="value-item">
           <h3>Performance</h3>
           <p>Des projets rapides, réactifs et optimisés.</p>
-        </div>
-        <div className="value-item">
-          <h3>Écoute</h3>
-          <p>Une approche centrée sur les besoins de l’utilisateur.</p>
         </div>
       </div>
     </section>
