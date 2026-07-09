@@ -80,8 +80,10 @@ function Home() {
           </article>
 
           <article className="project-card">
-            <h3>Interface utilisateur moderne</h3>
-            <p>Une expérience fluide, visuelle et agréable pour les visiteurs.</p>
+            <h3>Jeu vidéo</h3>
+            <p>Une expérience fluide, visuelle et agréable pour les gamers.
+              Jeu d'aventure et de survie.
+            </p>
           </article>
         </div>
       </div>
@@ -93,12 +95,15 @@ function Home() {
         </div>
 
         <div className="skills-list">
-          <span className="skill-badge">React</span>
-          <span className="skill-badge">Laravel</span>
           <span className="skill-badge">HTML</span>
           <span className="skill-badge">CSS</span>
-          <span className="skill-badge">JavaScript</span>
-          <span className="skill-badge">API REST</span>
+          <span className="skill-badge">JAVASCRIPT</span>
+          <span className="skill-badge">REACT</span>
+          <span className="skill-badge">PHP</span>
+          <span className="skill-badge">LARAVEL</span>
+          <span className="skill-badge">C#</span>
+          <span className="skill-badge">C</span>
+          <span className="skill-badge">PYTHON</span>
         </div>
       </div>
 
@@ -134,11 +139,26 @@ function Home() {
             </p>
           </article>
 
+           <article className="info-card">
+            <h3>Développement Mobile</h3>
+            <p>
+              Création de sites web modernes, rapides et adaptés aux besoins
+              de vos utilisateurs.
+            </p>
+          </article>
+
           <article className="info-card">
             <h3>Maintenance et support</h3>
             <p>
               Mise à jour, correction de bugs et amélioration continue de votre
               présence en ligne.
+            </p>
+          </article>
+
+          <article className="info-card">
+            <h3>Conception d'architecture réseau</h3>
+            <p>
+              Mise en place d'architecture réseau sécurisée et performante pour vos systèmes informatiques.
             </p>
           </article>
         </div>
