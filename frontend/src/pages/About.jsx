@@ -4,11 +4,11 @@ function About() {
       <div className="about-hero">
         <div>
           <span className="eyebrow">À propos</span>
-          <h1>Je crée des expériences web modernes, utiles et convaincantes.</h1>
+          <h1>Je suis ADZIMAH Séraph Cephas, je crée des expériences web modernes, utiles et convaincantes.</h1>
           <p>
             Je suis un développeur web passionné par la création d’interfaces
             élégantes, performantes et accessibles. Mon objectif est de transformer
-            des idées en solutions numériques claires et impactantes.
+            des idées et des besoins en solutions numériques claires et impactantes.
           </p>
         </div>
       </div>
