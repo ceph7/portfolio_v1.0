@@ -104,6 +104,11 @@ function Home() {
           <span className="skill-badge">C#</span>
           <span className="skill-badge">C</span>
           <span className="skill-badge">PYTHON</span>
+          <span className="skill-badge">JAVA</span>
+          <span className="skill-badge">MYSQL</span>
+          <span className="skill-badge">POSTGRESQL</span>
+          <span className="skill-badge">SQLSERVERL</span>
+
         </div>
       </div>
 
