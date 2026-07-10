@@ -60,21 +60,13 @@ function Contact() {
 
   return (
     <section className="contact-page">
-
+      
       <h2>Contactez-moi</h2>
 
       <p>
         <strong><em>Vous avez un projet, une question ou une idée ? N’hésitez pas à me contacter.</em></strong>
       </p>
 
-      <div className="contact-info">
-          <h3>Mes coordonnées</h3>
-          <ul>
-            <li> seraphcephas@gmail.com</li>
-            <li> +228 91 47 48 39</li>
-            <li> Lomé, Togo</li>
-          </ul>
-    </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label>
           Nom et Prenoms
