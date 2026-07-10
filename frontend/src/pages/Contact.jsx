@@ -60,6 +60,15 @@ function Contact() {
 
   return (
     <section className="contact-page">
+
+      <div className="contact-info">
+          <h3>Mes coordonnées</h3>
+          <ul>
+            <li>📧 seraphcephas@gmail.com</li>
+            <li>📱 +228 XX XX XX XX</li>
+            <li>📍 Lomé, Togo</li>
+          </ul>
+    </div>
       <h2>Contactez-moi</h2>
 
       <p>
