@@ -117,7 +117,7 @@ function Home() {
             Télécharger mon CV
           </a>
       </div>
-      
+
       <div className="experience-section">
         <div className="section-heading">
           <h2>Expérience</h2>
@@ -157,20 +157,6 @@ function Home() {
             </p>
           </article>
 
-          <article className="info-card">
-            <h3>Maintenance et support</h3>
-            <p>
-              Mise à jour, correction de bugs et amélioration continue de votre
-              présence en ligne.
-            </p>
-          </article>
-
-          <article className="info-card">
-            <h3>Conception d'architecture réseau</h3>
-            <p>
-              Mise en place d'architecture réseau sécurisée et performante pour vos systèmes informatiques.
-            </p>
-          </article>
         </div>
       </div>
     </section>
