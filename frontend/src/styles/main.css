@@ -1782,3 +1782,7 @@ footer {
   opacity: 1;
   transform: translateY(-2px);
 }
+
+h2,p{
+  text-align: center;
+}
