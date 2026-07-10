@@ -1783,6 +1783,6 @@ footer {
   transform: translateY(-2px);
 }
 
-h2,p{
+.contact-text{
   text-align: center;
 }
