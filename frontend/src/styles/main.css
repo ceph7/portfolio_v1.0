@@ -996,7 +996,6 @@ section {
 
 
 
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -1256,25 +1255,47 @@ footer {
 
 /* ---- Bande Projets ---- */
 .projects-section {
-  padding: 4rem 3rem;
-  background: #f8fafc;
+  padding: 5rem 3rem;
+  background: #eff6ff;
+}
+
+.projects-section .section-number {
+  background: #2563eb;
+  color: white;
 }
 
 .section-heading {
   text-align: center;
   max-width: 640px;
   margin: 0 auto 2.5rem;
+  position: relative;
+}
+
+.section-heading .section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background: #2563eb;
+  color: white;
 }
 
 .section-heading h2 {
   margin-bottom: 0.4rem;
   color: #111827;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .section-heading p {
   margin: 0;
   color: #64748b;
+  font-size: 1.05rem;
 }
 
 .projects-grid {
@@ -1287,9 +1308,15 @@ footer {
   background: white;
   padding: 1.5rem;
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dbeafe;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   border-top: 4px solid #2563eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15);
 }
 
 .project-card h3 {
@@ -1301,16 +1328,20 @@ footer {
 /* ---- Bande Compétences ---- */
 .skills-section {
   padding: 4rem 3rem;
-  background: #111827;
+  background: #ffffff;
 }
 
-.skills-section .section-heading h2,
-.skills-section .section-heading p {
+.skills-section .section-number {
+  background: #2563eb;
   color: white;
 }
 
+.skills-section .section-heading h2 {
+  color: #111827;
+}
+
 .skills-section .section-heading p {
-  color: #94a3b8;
+  color: #64748b;
 }
 
 .skills-list {
@@ -1333,23 +1364,29 @@ footer {
 .home-page > .hero-buttons {
   padding: 3rem;
   text-align: center;
-  background: #ffffff;
+  background: #eff6ff;
 }
 
 /* ---- Bande Expérience ---- */
 .experience-section {
-  padding: 4rem 3rem;
-  background: #f8fafc;
+  padding: 5rem 3rem;
+  background: #ffffff;
+}
+
+.experience-section .section-number {
+  background: #2563eb;
+  color: white;
 }
 
 .experience-item {
-  background: white;
-  padding: 1.5rem;
+  background: #f8fafc;
+  padding: 1.75rem;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
-  border-left: 4px solid #2563eb;
+  border-left: 5px solid #2563eb;
   max-width: 800px;
   margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
 }
 
 .experience-item h3 {
@@ -1359,14 +1396,28 @@ footer {
 
 /* ---- Bande Services ---- */
 .services-section {
-  padding: 4rem 3rem;
-  background: #ffffff;
+  padding: 5rem 3rem;
+  background: #eff6ff;
+}
+
+.services-section .section-number {
+  background: #2563eb;
+  color: white;
 }
 
 .services-section .info-grid {
   padding: 0;
   background: none;
   max-width: none;
+}
+
+.services-section .info-card {
+  border-top: 4px solid #2563eb;
+  background: white;
+}
+
+.services-section .info-card:hover {
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15);
 }
 
 @media (max-width: 900px) {
@@ -1781,8 +1832,4 @@ footer {
 .social-icon:hover {
   opacity: 1;
   transform: translateY(-2px);
-}
-
-.contact-text{
-  text-align: center;
 }
