@@ -849,7 +849,7 @@ section {
 
 
 
-.hero-buttons {
+/* .hero-buttons {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -866,4 +866,4 @@ section {
 .btn-secondary:hover {
   background: #2563eb;
   color: #fff;
-}
+} */
