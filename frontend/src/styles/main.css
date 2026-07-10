@@ -867,3 +867,19 @@ section {
   background: #2563eb;
   color: #fff;
 } */
+
+
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+.social-icon {
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.social-icon:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
