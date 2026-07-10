@@ -21,6 +21,11 @@ function Home() {
               Découvrir mon profil
             </Link>
           </div>
+              <div className="hero-buttons">        
+          <a href="/ADZIMAH_Cephas_CV_DEF.pdf" download className="btn btn-secondary">
+            Télécharger mon CV
+          </a>
+      </div>
 {/* 
           <div className="hero-highlights">
             <div className="hero-highlight">

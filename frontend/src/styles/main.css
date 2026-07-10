@@ -846,3 +846,24 @@ section {
   resize: vertical;
   max-width: 100%;
 }
+
+
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-secondary:hover {
+  background: #2563eb;
+  color: #fff;
+}
