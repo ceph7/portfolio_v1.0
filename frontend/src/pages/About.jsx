@@ -6,7 +6,7 @@ function About() {
           <span className="eyebrow">À propos</span>
           <h1>Je suis ADZIMAH Séraph Cephas, je crée des expériences web modernes, utiles et convaincantes.</h1>
           <p>
-            Je suis un développeur web passionné par la création d’interfaces
+            Je suis un développeur passionné par la création d’interfaces
             élégantes, performantes et accessibles. Mon objectif est de transformer
             des idées et des besoins en solutions numériques claires et impactantes.
           </p>
@@ -17,7 +17,7 @@ function About() {
         <article className="about-card">
           <h3>Qui je suis ?</h3>
           <p>
-            Je m’intéresse au développement web depuis quelques années et j’aime construire
+            Je m’intéresse au développement depuis quelques années et j’aime construire
             des projets à la fois fonctionnels et esthétiques. Je travaille avec
             des technologies modernes pour offrir des expériences fluides sur tous
             les supports et garantir l'accessibilité à tous.
@@ -27,7 +27,7 @@ function About() {
         <article className="about-card">
           <h3>Ce que j’aime faire</h3>
           <p>
-            Concevoir des interfaces modernes, développer des applications web
+            Concevoir des interfaces modernes, développer des applications web 
             fiables et améliorer continuellement l’expérience utilisateur.
           </p>
         </article>
@@ -36,7 +36,7 @@ function About() {
       <div className="about-story">
         <h2>Mon parcours</h2>
         <p>
-          J'ai commencé le développement web dès ma première année d'université. Au fil de mes expériences, j’ai appris à allier technique, créativité
+          J'ai commencé dès ma première année d'université. Cours après cours et projet après projet, j’ai appris à allier technique, créativité
           et logique pour produire des projets pertinents. Chaque réalisation me
           permet de renforcer mes compétences et d’apprendre de nouvelles approches.
         </p>
