@@ -102,7 +102,7 @@ function Contact() {
         </label>
 
         <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
-          {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
+          {isSubmitting ? 'Envoi en cours ...' : 'Envoyer'}
         </button>
 
         {error && (
