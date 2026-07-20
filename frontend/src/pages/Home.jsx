@@ -118,11 +118,12 @@ function Home() {
 
         </div>
       </div>
-   <div className="hero-buttons">        
-          <a download  href="/ADZIMAH_Cephas_CV_DEF.pdf" className="btn btn-secondary">
-            Télécharger mon CV
-          </a>
-      </div>
+  <div class="hero-buttons">
+  <a href="/ADZIMAH_Cephas_CV_DEF.pdf" class="btn btn-secondary" download="ADZIMAH_Cephas_CV.pdf">
+    Télécharger mon CV
+  </a>
+</div>
+
 
       <div className="experience-section">
         <div className="section-heading">
