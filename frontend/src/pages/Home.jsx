@@ -7,9 +7,9 @@ function Home() {
       <div className="hero-block">
         <div className="hero-text">
           <span className="eyebrow">Etudiant en Genie logiciel</span>
-          <h1>Je conçois des sites modernes, rapides et pensés pour l’utilisateur.</h1>
+          <h1>Je conçois des solutions modernes, rapides et pensés pour l’utilisateur.</h1>
           <p>
-            Bonjour, je suis développeur web passionné par la création d’expériences
+            Bonjour, je suis développeur passionné par la création d’expériences
             digitales élégantes, performantes et accessibles.
           </p>
 
@@ -48,7 +48,7 @@ function Home() {
         <article className="info-card">
           <h3>Ce que je propose</h3>
           <p>
-            Développement de sites web modernes,applications web et optimisation de l’expérience
+            Développement de sites web modernes, applications web et optimisation de l’expérience
             utilisateur et mise en place de solutions sur mesure.
           </p>
         </article>
@@ -56,8 +56,8 @@ function Home() {
         <article className="info-card">
           <h3>Mon approche</h3>
           <p>
-            J’accorde une importance particulière à la clarté, à la performance
-            et à la qualité du rendu visuel.
+            J’accorde une importance particulière à l'écoute des besoins, la clarté, à la performance,
+             à la qualité du rendu visuel et à l'experience utilisateur.
           </p>
         </article>
       </div>
@@ -84,6 +84,12 @@ function Home() {
             <h3>Jeu vidéo</h3>
             <p>Une expérience fluide, visuelle et agréable pour les gamers.
               Jeu d'aventure et de survie.
+            </p>
+          </article>
+
+          <article className="project-card">
+            <h3>Application de gestion de restaurant</h3>
+            <p>Une plateforme pensée pour faciliter la gestion de restaurant.
             </p>
           </article>
         </div>
@@ -113,7 +119,7 @@ function Home() {
         </div>
       </div>
    <div className="hero-buttons">        
-          <a href="/ADZIMAH_Cephas_CV_DEF.pdf" download className="btn btn-secondary">
+          <a download  href="/ADZIMAH_Cephas_CV_DEF.pdf" className="btn btn-secondary">
             Télécharger mon CV
           </a>
       </div>
@@ -149,13 +155,13 @@ function Home() {
               de vos utilisateurs.
             </p>
           </article>
-
+{/* 
            <article className="info-card">
             <h3>Développement Mobile</h3>
             <p>
               Création d'applications intuitives, rapides et pensées pour les utilisateurs.
             </p>
-          </article>
+          </article> */}
 
         </div>
       </div>
