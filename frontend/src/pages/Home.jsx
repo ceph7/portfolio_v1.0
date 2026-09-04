@@ -145,7 +145,7 @@ function Home() {
         </div>
       </div>
   <div class="hero-buttons">
-  <a href="/frontend/public/images/ADZIMAH_SERAPH_CEPHAS_CV.pdf-2.pdf" class="btn btn-secondary" download="frontend/public/images/ADZIMAH_SERAPH_CEPHAS_CV.pdf-2.pdf" target='_blank'>
+  <a href="/images/ADZIMAH_SERAPH_CEPHAS_CV.pdf-2.pdf" className="btn btn-secondary" download="ADZIMAH_SERAPH_CEPHAS_CV.pdf">
     Télécharger mon CV
   </a>
 </div>
