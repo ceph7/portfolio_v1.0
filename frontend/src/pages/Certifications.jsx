@@ -53,14 +53,6 @@ function Certifications() {
               <p>{certification.issuer}</p>
               <small>Document PDF</small>
             </div>
-            <a
-              className="certification-link"
-              href={getCertificationUrl(certification.fileName)}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ouvrir en grand
-            </a>
           </article>
         ))}
       </div>

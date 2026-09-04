@@ -1432,6 +1432,8 @@ footer {
   display: block;
   border: 0;
   background: white;
+  pointer-events: none;
+  user-select: none;
 }
 
 .certification-number {
@@ -1463,19 +1465,6 @@ footer {
 
 .certification-card small {
   color: #94a3b8;
-}
-
-.certification-link {
-  align-self: flex-start;
-  color: #2563eb;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.certification-link:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
 }
 
 /* ---- Bande Compétences ---- */
