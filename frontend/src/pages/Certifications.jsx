@@ -39,6 +39,13 @@ function Certifications() {
       <div className="certifications-grid">
         {certifications.map((certification, index) => (
           <article className="certification-card" key={certification.fileName}>
+            <div className="certification-preview">
+              <iframe
+                src={`${getCertificationUrl(certification.fileName)}#toolbar=0&navpanes=0&scrollbar=0`}
+                title={`Aperçu de ${certification.title}`}
+                loading="lazy"
+              />
+            </div>
             <div className="certification-number">0{index + 1}</div>
             <div>
               <p className="certification-label">Certification</p>
@@ -47,12 +54,12 @@ function Certifications() {
               <small>Document PDF</small>
             </div>
             <a
-              className="btn btn-secondary certification-link"
+              className="certification-link"
               href={getCertificationUrl(certification.fileName)}
               target="_blank"
               rel="noreferrer"
             >
-              Voir le certificat
+              Ouvrir en grand
             </a>
           </article>
         ))}

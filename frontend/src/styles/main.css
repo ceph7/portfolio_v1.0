@@ -1410,6 +1410,28 @@ footer {
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15);
+}
+
+.certification-preview {
+  height: 250px;
+  margin: -1.5rem -1.5rem 0;
+  overflow: hidden;
+  background: #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.certification-preview iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  background: white;
 }
 
 .certification-number {
@@ -1445,6 +1467,15 @@ footer {
 
 .certification-link {
   align-self: flex-start;
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.certification-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 /* ---- Bande Compétences ---- */
