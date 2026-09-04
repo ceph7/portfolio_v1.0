@@ -1,23 +1,33 @@
 const certifications = [
   {
-    title: 'Certification à ajouter',
-    issuer: 'Organisme de formation',
-    date: 'Date d’obtention',
-    file: '/certifications/certification-1.pdf',
+    title: 'Certificat professionnel',
+    issuer: 'Certificate.pdf',
+    fileName: 'certificate.pdf',
   },
   {
-    title: 'Certification à ajouter',
-    issuer: 'Organisme de formation',
-    date: 'Date d’obtention',
-    file: '/certifications/certification-2.pdf',
+    title: 'Certificat professionnel',
+    issuer: 'Certificate_Seraph Cephas Adzimah.pdf',
+    fileName: 'Certificate_Seraph Cephas Adzimah.pdf',
   },
   {
-    title: 'Certification à ajouter',
-    issuer: 'Organisme de formation',
-    date: 'Date d’obtention',
-    file: '/certifications/certification-3.pdf',
+    title: 'Certification Data Science',
+    issuer: 'SERAPH_CEPHAS_ADZIMAH_FIT_JUL26_DS22052_Certificate.pdf',
+    fileName: 'SERAPH_CEPHAS_ADZIMAH_FIT_JUL26_DS22052_Certificate.pdf',
   },
+  ...['certificate-2.pdf', 'certificate-3.pdf', 'certificate-4.pdf', 'certificate-5.pdf', 'certificate-6.pdf'].map((fileName) => ({
+    title: 'Certificat professionnel',
+    issuer: fileName,
+    fileName,
+  })),
 ];
+
+function getCertificationUrl(fileName) {
+  return `/images/certifications/${encodeURIComponent(fileName)}`;
+}
+
+function getCertificationDownloadName(fileName) {
+  return fileName.replace(/\.pdf$/i, '');
+}
 
 function Certifications() {
   return (
@@ -32,17 +42,18 @@ function Certifications() {
 
       <div className="certifications-grid">
         {certifications.map((certification, index) => (
-          <article className="certification-card" key={certification.file}>
+          <article className="certification-card" key={certification.fileName}>
             <div className="certification-number">0{index + 1}</div>
             <div>
               <p className="certification-label">Certification</p>
               <h2>{certification.title}</h2>
               <p>{certification.issuer}</p>
-              <small>{certification.date}</small>
+              <small>Document PDF</small>
             </div>
             <a
               className="btn btn-secondary certification-link"
-              href={certification.file}
+              href={getCertificationUrl(certification.fileName)}
+              download={getCertificationDownloadName(certification.fileName)}
               target="_blank"
               rel="noreferrer"
             >
