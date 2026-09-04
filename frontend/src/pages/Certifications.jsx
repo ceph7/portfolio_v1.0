@@ -21,8 +21,9 @@ const certifications = [
   { title: 'Advanced Git', issuer: 'DataCamp', fileName: 'certificate-6.pdf' },
 ];
 
-function getCertificationUrl(fileName) {
-  return `/images/certifications/${encodeURIComponent(fileName)}`;
+function getCertificationPreviewUrl(fileName) {
+  const previewName = fileName.replace(/\.pdf$/i, '.png');
+  return `/images/certifications/previews/${encodeURIComponent(previewName)}`;
 }
 
 function Certifications() {
@@ -40,10 +41,11 @@ function Certifications() {
         {certifications.map((certification, index) => (
           <article className="certification-card" key={certification.fileName}>
             <div className="certification-preview">
-              <iframe
-                src={`${getCertificationUrl(certification.fileName)}#toolbar=0&navpanes=0&scrollbar=0`}
+              <img
+                src={getCertificationPreviewUrl(certification.fileName)}
                 title={`Aperçu de ${certification.title}`}
                 loading="lazy"
+                alt={`Aperçu de ${certification.title}`}
               />
             </div>
             <div className="certification-number">0{index + 1}</div>
