@@ -1,32 +1,28 @@
 const certifications = [
   {
-    title: 'Certificat professionnel',
-    issuer: 'Certificate.pdf',
+    title: 'Introduction to SQL',
+    issuer: 'DataCamp',
     fileName: 'certificate.pdf',
   },
   {
-    title: 'Certificat professionnel',
-    issuer: 'Certificate_Seraph Cephas Adzimah.pdf',
+    title: 'Certificate - Seraph Cephas Adzimah',
+    issuer: 'Certificat personnel',
     fileName: 'Certificate_Seraph Cephas Adzimah.pdf',
   },
   {
-    title: 'Certification Data Science',
-    issuer: 'SERAPH_CEPHAS_ADZIMAH_FIT_JUL26_DS22052_Certificate.pdf',
+    title: 'Certificate of Completion - Future Interns',
+    issuer: 'Future Interns',
     fileName: 'SERAPH_CEPHAS_ADZIMAH_FIT_JUL26_DS22052_Certificate.pdf',
   },
-  ...['certificate-2.pdf', 'certificate-3.pdf', 'certificate-4.pdf', 'certificate-5.pdf', 'certificate-6.pdf'].map((fileName) => ({
-    title: 'Certificat professionnel',
-    issuer: fileName,
-    fileName,
-  })),
+  { title: 'Introduction to Power BI', issuer: 'DataCamp', fileName: 'certificate-2.pdf' },
+  { title: 'Intermediate SQL', issuer: 'DataCamp', fileName: 'certificate-3.pdf' },
+  { title: 'Claude 101', issuer: 'DataCamp', fileName: 'certificate-4.pdf' },
+  { title: 'Understanding Microsoft Azure', issuer: 'DataCamp', fileName: 'certificate-5.pdf' },
+  { title: 'Advanced Git', issuer: 'DataCamp', fileName: 'certificate-6.pdf' },
 ];
 
 function getCertificationUrl(fileName) {
   return `/images/certifications/${encodeURIComponent(fileName)}`;
-}
-
-function getCertificationDownloadName(fileName) {
-  return fileName.replace(/\.pdf$/i, '');
 }
 
 function Certifications() {
@@ -53,7 +49,6 @@ function Certifications() {
             <a
               className="btn btn-secondary certification-link"
               href={getCertificationUrl(certification.fileName)}
-              download={getCertificationDownloadName(certification.fileName)}
               target="_blank"
               rel="noreferrer"
             >
