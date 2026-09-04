@@ -5,8 +5,8 @@ const certifications = [
     fileName: 'certificate.pdf',
   },
   {
-    title: 'Certificate - Seraph Cephas Adzimah',
-    issuer: 'Certificat personnel',
+    title: 'Certificate - Seraph Cephas Adzimah - CodeAlpha',
+    issuer: 'CodeAlpha',
     fileName: 'Certificate_Seraph Cephas Adzimah.pdf',
   },
   {
