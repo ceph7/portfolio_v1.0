@@ -1325,6 +1325,128 @@ footer {
   color: #111827;
 }
 
+.project-image {
+  height: 170px;
+  margin: -1.5rem -1.5rem 1.25rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-image span {
+  display: none;
+}
+
+.project-image--missing span {
+  display: block;
+}
+
+.project-image--portfolio { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+.project-image--inventory { background: linear-gradient(135deg, #dcfce7, #bbf7d0); color: #166534; }
+.project-image--game { background: linear-gradient(135deg, #ffedd5, #fed7aa); color: #9a3412; }
+.project-image--restaurant { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e; }
+.project-image--wireframe { background: linear-gradient(135deg, #fce7f3, #fbcfe8); color: #9d174d; }
+.project-image--prototype { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); color: #3730a3; }
+.project-image--data { background: linear-gradient(135deg, #cffafe, #a5f3fc); color: #155e75; }
+.project-image--weather { background: linear-gradient(135deg, #e0f2fe, #bae6fd); color: #075985; }
+
+/* ---- Page Certifications ---- */
+.certifications-page {
+  min-height: 70vh;
+  padding: 5rem 3rem;
+  background: #f8fafc;
+}
+
+.page-intro {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.page-intro h1 {
+  margin: 0.6rem 0;
+  color: #111827;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.page-intro p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.certifications-grid {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-card {
+  position: relative;
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.certification-number {
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.certification-label {
+  margin: 0 0 0.4rem;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.certification-card h2 {
+  margin: 0 0 0.55rem;
+  color: #111827;
+  font-size: 1.25rem;
+}
+
+.certification-card p:not(.certification-label) {
+  margin: 0 0 0.35rem;
+  color: #475569;
+}
+
+.certification-card small {
+  color: #94a3b8;
+}
+
+.certification-link {
+  align-self: flex-start;
+}
+
 /* ---- Bande Compétences ---- */
 .skills-section {
   padding: 4rem 3rem;

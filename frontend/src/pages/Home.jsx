@@ -72,17 +72,29 @@ function Home() {
 
         <div className="projects-grid">
           <article className="project-card">
+            <div className="project-image project-image--portfolio">
+              <img src="/images/projects/portfolio.jpg" alt="Aperçu du portfolio professionnel" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Portfolio professionnel</h3>
             <p>Un site moderne, responsive et sécurisé avec React et Laravel.</p>
           </article>
 
           <article className="project-card">
+            <div className="project-image project-image--inventory">
+              <img src="/images/projects/parc-informatique.jpg" alt="Aperçu de l’application de gestion de parc informatique" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Application web de gestion de parc informatique</h3>
             <p>Une solution pensée pour répondre à un besoin précis et concret au sein des entreprises pour ameliorer
               le suivi du materiel affecté aux employés.</p>
           </article>
 
           <article className="project-card">
+            <div className="project-image project-image--game">
+              <img src="/images/projects/jeu-video.jpg" alt="Aperçu du jeu vidéo" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Jeu vidéo</h3>
             <p>Une expérience fluide, visuelle et agréable pour les gamers.
               Jeu d'aventure et de survie.
@@ -90,26 +102,52 @@ function Home() {
           </article>
 
           <article className="project-card">
+            <div className="project-image project-image--restaurant">
+              <img src="/images/projects/restaurant.jpg" alt="Aperçu de l’application de gestion de restaurant" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Application de gestion de restaurant</h3>
             <p>Une plateforme pensée pour faciliter la gestion de restaurant.
             </p>
           </article>
 
           <article className="project-card">
+            <div className="project-image project-image--wireframe">
+              <img src="/images/projects/wireframe.jpg" alt="Aperçu du wireframe UI/UX" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Wireframing UI/UX</h3>
             <p>Réalisation de wireframe suivant le low-fidelity design pour une application mobile
             </p>
           </article>
 
           <article className="project-card">
+            <div className="project-image project-image--prototype">
+              <img src="/images/projects/prototype-mobile.jpg" alt="Aperçu du prototype mobile" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Protoypage d'une application mobile</h3>
             <p>Conception d'un prototype d'application mobile pour une meilleure visualisation de l'interface utilisateur et de l'expérience utilisateur.
             </p>
           </article>
 
           <article className="project-card">
+            <div className="project-image project-image--data">
+              <img src="/images/projects/data-science.jpg" alt="Aperçu du projet data science et analytics" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
             <h3>Data science & Analytics</h3>
             <p>Analyse de données et création de modèles prédictifs pour aider à la prise de décision.
+            </p>
+          </article>
+
+          <article className="project-card">
+            <div className="project-image project-image--weather">
+              <img src="/images/projects/meteo-mobile.jpg" alt="Aperçu de l’application mobile météo" onError={(event) => { event.currentTarget.remove(); event.currentTarget.parentElement.classList.add('project-image--missing'); }} />
+              <span>Photo à ajouter</span>
+            </div>
+            <h3>Application Mobile</h3>
+            <p>Application mobile de meteo pour connaitre les conditions meteo partout dans le monde.
             </p>
           </article>
         </div>
