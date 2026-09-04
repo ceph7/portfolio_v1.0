@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 
+
 function Home() {
   return (
     <section className="home-page">
@@ -9,7 +10,7 @@ function Home() {
           <span className="eyebrow">Etudiant en Genie logiciel</span>
           <h1>Je conçois des solutions modernes, rapides et pensés pour l’utilisateur.</h1>
           <p>
-            Bonjour, je suis développeur passionné par la création d’expériences
+            Bonjour, je suis futur ingénieur logiciel passionné par la création d’expériences
             digitales élégantes, performantes et accessibles.
           </p>
 
@@ -43,6 +44,7 @@ function Home() {
           <img src="/images/profile.JPG" alt="Photo de profil" />
         </div>
       </div>
+
 
       <div className="info-grid">
         <article className="info-card">
@@ -92,6 +94,24 @@ function Home() {
             <p>Une plateforme pensée pour faciliter la gestion de restaurant.
             </p>
           </article>
+
+          <article className="project-card">
+            <h3>Wireframing UI/UX</h3>
+            <p>Réalisation de wireframe suivant le low-fidelity design pour une application mobile
+            </p>
+          </article>
+
+          <article className="project-card">
+            <h3>Protoypage d'une application mobile</h3>
+            <p>Conception d'un prototype d'application mobile pour une meilleure visualisation de l'interface utilisateur et de l'expérience utilisateur.
+            </p>
+          </article>
+
+          <article className="project-card">
+            <h3>Data science & Analytics</h3>
+            <p>Analyse de données et création de modèles prédictifs pour aider à la prise de décision.
+            </p>
+          </article>
         </div>
       </div>
 
@@ -115,11 +135,17 @@ function Home() {
           <span className="skill-badge">MYSQL</span>
           <span className="skill-badge">POSTGRESQL</span>
           <span className="skill-badge">SQLSERVER</span>
+          <span className="skill-badge">EXCEL</span>
+          <span className="skill-badge">TABLEAU</span>
+          <span className="skill-badge">FIGMA</span>
+          <span className="skill-badge">POWER BI</span>
+          <span className="skill-badge">GIT & GITHUB</span>
+          
 
         </div>
       </div>
   <div class="hero-buttons">
-  <a href="/ADZIMAH_Cephas_CV_DEF.pdf" class="btn btn-secondary" download="ADZIMAH_Cephas_CV_DEF.pdf" target='_blank'>
+  <a href="/frontend/public/images/ADZIMAH_SERAPH_CEPHAS_CV.pdf-2.pdf" class="btn btn-secondary" download="frontend/public/images/ADZIMAH_SERAPH_CEPHAS_CV.pdf-2.pdf" target='_blank'>
     Télécharger mon CV
   </a>
 </div>
@@ -128,7 +154,7 @@ function Home() {
       <div className="experience-section">
         <div className="section-heading">
           <h2>Expérience</h2>
-          <p>Un aperçu de mon parcours professionnel.</p>
+          <p>Mon parcours professionnel</p>
         </div>
 
         <div className="experience-item">
@@ -140,6 +166,22 @@ function Home() {
             conditions météorologiques sur l’ensemble du territoire togolais.
           </p>
         </div>
+        <div className="experience-item">
+          <h3>Stagiaire Data Science & Analytics</h3>
+          <p><strong>Future Interns</strong> • Juil 2026 à Août 2026</p>
+          <p>
+            J'ai réalisé trois tâches principales : l'analyse de données, la création de modèles prédictifs et la visualisation des résultats. J'ai utilisé Python et des bibliothèques telles que Pandas, NumPy et Matplotlib pour effectuer ces tâches.
+            Egalement en utilisant Tableau Public pour la réalisation et la visualisation des Dasboard.
+          </p>
+        </div>
+
+        <div className="experience-item">
+          <h3>Stagiaire UI/UX Design</h3>
+          <p><strong>Code Alpha</strong> • Août 2026 </p>
+          <p>
+            Du wireframing à la création de prototypes interactifs, j'ai contribué à la conception d'une application mobile en utilisant Figma. J'ai collaboré avec l'équipe de développement pour assurer une expérience utilisateur optimale.
+          </p>
+        </div>
       </div>
 
       <div className="services-section">
@@ -149,6 +191,15 @@ function Home() {
         </div>
 
         <div className="info-grid">
+
+             <article className="info-card">
+            <h3> Modélisation des systèmes</h3>
+            <p>
+              Le code n'étant qu'une infime partie de l'ingénieurie logiciel, je propose également la modélisation des systèmes pour une meilleure compréhension et planification de votre projet.
+              </p>
+          </article>
+
+
           <article className="info-card">
             <h3>Développement web</h3>
             <p>
@@ -156,6 +207,38 @@ function Home() {
               de vos utilisateurs.
             </p>
           </article>
+
+             <article className="info-card">
+            <h3> Developpement mobile</h3>
+            <p>
+              Création d'applications mobiles performantes, intuitives et adaptées aux besoins des utilisateurs.
+            </p>
+          </article>
+
+          <article className="info-card">
+
+            <h3>UI/UX Design  </h3>
+            <p>
+              Conception d'interfaces utilisateur intuitives et esthétiques pour une expérience optimale.
+            </p>
+          </article>
+
+          <article className="info-card">
+
+            <h3>Data Analytics</h3>
+            <p>
+              Analyse de données et création de modèles prédictifs pour aider à la prise de décision.
+            </p>
+          </article>
+          <article className="info-card">
+
+            <h3>UI/UX Design  </h3>
+            <p>
+              Conception d'interfaces utilisateur intuitives et esthétiques pour une expérience optimale.
+            </p>
+          </article>
+
+       
 {/* 
            <article className="info-card">
             <h3>Développement Mobile</h3>

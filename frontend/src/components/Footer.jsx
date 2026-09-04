@@ -25,7 +25,7 @@ function Footer() {
       <div className="footer-content">
         <div>
           <h3>ADZIMAH Seraph Cephas</h3>
-          <p>Développeur passionné par les solutions modernes et utiles.</p>
+          <p>Future Software Engineer passionné par les solutions modernes et utiles.</p>
         </div>
 
         <div>
